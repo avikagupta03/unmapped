@@ -10,7 +10,13 @@ require('dotenv').config();
 const app = express();
 app.use(helmet());
 app.use(cookieParser());
-app.use(cors({ origin: process.env.CLIENT_URL || 'http://localhost:3000', credentials: true }));
+app.use(cors({
+  origin: [
+    'https://unmapped-seven.vercel.app',
+    'http://localhost:3000'
+  ],
+  credentials: true
+}))
 app.use(rateLimit({ windowMs: 15 * 60 * 1000, max: 200 }));
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
