@@ -1,6 +1,7 @@
 # unmapped — Escape the Ordinary 🏔️
 
-> **🌐 Live Website:** [Click here to visit unmapped](#)
+> **🌐 live at \href{https://unmapped-seven.vercel.app}
+{unmapped-seven.vercel.app}
 
 A full-stack travel web application for curated weekend trips and treks across India. Built for travelers who want to escape without the planning hassle — we plan everything, they just show up.
 
